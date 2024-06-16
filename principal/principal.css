@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --cor-texto: #ffffff;
+    --cor-texto-hover:  #e91212;
+    --cor-background-padrao: #010032;
+    --cor-botao-padrao:  #f8e041;
+    --cor-botao-hover: #a18c00;
+    --cor-texto-footer:#666;
+    --cor-background-darkmode: #1c1c1c;
+    --cor-texto-footer-darkmode: #999999;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    background-color: var(--cor-background-padrao);
+}
+.background{
+    transition: background-color .5s;
+}
+
+.background.active{
+    background-color: var(--cor-background-darkmode);
+    color: var(--cor-background-padrao);
+}
+
+header {
+    background-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 8%,#2D106B 29%, #2D106B 100%);
+    padding: 20px;
+    transition: background-color .5s;
+}
+.img_principal{
+    position: relative;
+}
+.texto_img{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+}
+.texto_img{
+    top: 70px; 
+    left: 450px;
+    transform: translate(-50%, 0); 
+}
+.texto_img{
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: start;
+}
+.cabecalho.active{
+    background-color: #23527c;
+    color: rgb(255, 255, 255);
+}
+.logo {
+    display: flex;
+    width: 200px;
+    height: 80px;
+}
+
+nav ul {
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    padding: 10px;
+    font-size: 1rem;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: var(--cor-texto-hover);
+}
+
+nav button{
+    transition:  0.5s;
+}
+
+.img_corrida {
+    width: 100%;
+    height: 700px;
+}
+img {
+    width: 30vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.invertida{
+    display: flex;
+    flex-direction: row-reverse;
+}
+article {
+    margin-top: 50px;
+    padding: 0px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.texto{
+    color: var(--cor-texto);
+    width: 60%;
+    font-size: 35px;
+    font-weight: bold;
+}
+.texto_central{
+    color: var(--cor-texto);
+    text-align: center;
+    font-size: 48px;
+}
+.nft_style{
+    color: #00F0FF;
+    font-size: 48px;
+}
+article li{
+    margin-top: 30px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #010032;
+    color: white;  
+}

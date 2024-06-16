@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="cabecalho">
+            <img src="imagens/logo.png" alt="Logo Formula E" class="logo_formula">
+            <nav class="menu_nav">
+                <a href="cadastro.html" class="registro__content">Register</a>
+                <a href="index.html"> Sign-Up</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="login">
+            <div class="login__container">
+                <h3>ACESSE SUA CONTA</h3>
+                <form>
+                    <input type="email" placeholder="Digite seu email" id="email_login" required>
+                    <br><br>
+                    <input type="password" placeholder="Digite sua senha" id="senha_login" required>
+    
+                    <p id="erro"></p>
+                    <br>
+                    <button type="button" id="logar" onclick="entrarConta()">Entrar</button>
+                </form>
+                <p>Não tem conta? <a href="cadastro.html">Clique aqui</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <h2>© FIA 2013-2024 </h2>
+            <p>Todos os direitos reservados</p>
+        </section>
+    </footer>
+    <script src="login.js"></script>

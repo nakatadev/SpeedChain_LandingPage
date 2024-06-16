@@ -1,0 +1,146 @@
+/* Import the Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif; /* Set Inter as the default font */
+}
+
+/* Header styles */
+header {
+  background-image: linear-gradient(to right, white 20px, white 10%, #10196B 25%);
+  padding: 0.2em;
+}
+
+.cabecalho { /* Renamed for clarity */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_formula {
+  margin-left: 1em;
+}
+
+.menu_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_nav a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.5em 1em; /* Added padding for better spacing */
+}
+
+.menu_nav a.active { /* Style for active menu item (optional) */
+  background-color: #35B6FF; /* Adjust color as needed */
+  color: white;
+}
+
+main {
+  background-image: url('/imagens/corrida.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 39.2vw;
+}
+
+/* Login and Registration styles */
+.login,
+.registro {
+  width: 25rem;
+  padding: 1.875rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-left: 38%;
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+.login h3,
+.registro h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login form,
+.registro form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login form input,
+.registro form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+.login form button,
+.registro form button {
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.login form button:hover,
+.registro form button:hover {
+  background-color: #b3b3b3;
+}
+
+.login p,
+.registro p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login a,
+.registro a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.registro #numerosAdicionais input {
+  margin-bottom: 5px;
+}
+
+.registro label {
+  margin-bottom: 5px;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #10196B;
+  color: white;
+}
+
+footer h2 {
+  font-style: italic;
+  font-weight: 900;
+}
+
+footer a { /* Style for links in the footer (optional) */
+  color: #35B6FF; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+footer a:hover { /* Hover effect for links (optional) */
+  color: #b6a7ee;
+}
+
