@@ -1,20 +1,20 @@
-/* Import the Inter font from Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* Global styles */
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif; /* Set Inter as the default font */
+  font-family: "Inter", sans-serif; 
 }
 
-/* Header styles */
+
 header {
   background-image: linear-gradient(to right, white 20px, white 10%, #10196B 25%);
   padding: 0.2em;
 }
 
-.cabecalho { /* Renamed for clarity */
+.cabecalho { 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,11 +35,11 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 0.5em 1em; /* Added padding for better spacing */
+  padding: 0.5em 1em; 
 }
 
-.menu_nav a.active { /* Style for active menu item (optional) */
-  background-color: #35B6FF; /* Adjust color as needed */
+.menu_nav a.active { 
+  background-color: #35B6FF; 
   color: white;
 }
 
@@ -51,7 +51,7 @@ main {
   height: 39.2vw;
 }
 
-/* Login and Registration styles */
+
 .login,
 .registro {
   width: 25rem;
@@ -121,7 +121,6 @@ main {
   margin-bottom: 5px;
 }
 
-/* Footer styles */
 footer {
   display: flex;
   align-items: center;
@@ -135,12 +134,11 @@ footer h2 {
   font-weight: 900;
 }
 
-footer a { /* Style for links in the footer (optional) */
-  color: #35B6FF; /* Adjust color as needed */
+footer a { 
+  color: #35B6FF; 
   text-decoration: none;
 }
 
-footer a:hover { /* Hover effect for links (optional) */
+footer a:hover {
   color: #b6a7ee;
 }
-
